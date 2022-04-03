@@ -37,7 +37,8 @@ def sensitive_sync_function(searchParam, pageSize, pageNumber):
     for item in product_item:
         picture = item.xpath('./div[@class="picture"]/a/img/@src')[0]
         if str(picture).endswith('147_125.jpeg') | str(picture).endswith('default-image_125.png'):
-            picture = "https://img2.baidu.com/it/u=169218525,969172668&fm=253&fmt=auto&app=138&f=JPEG?w=100&h=100"
+            picture = "https://bpic.588ku.com/element_origin_min_pic/19/04/23/7a748458551c496f71449f2adf2c830b.jpg"
+            # picture = "https://img2.baidu.com/it/u=169218525,969172668&fm=253&fmt=auto&app=138&f=JPEG?w=100&h=100"
         item_detail = item.xpath('./div[@class="details"]')
         for item_d in item_detail:
             item_detail_title = item_d.xpath('./h2/a/@title')[0]
